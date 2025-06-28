@@ -1,6 +1,4 @@
 ---
 title: 读。
 ---
-test
-
-而。
+This is a cookbook for you to learn Computer Science from scratch up.
