@@ -1,7 +1,7 @@
 name: Deploy Kodama site to Pages
 env:
   # The URL of the GitHub Pages site, which is used to build the site.
-  PAGE_URL: https://symmetricspace.github.io/symmetry_space/
+  PAGE_URL: https://symmetricspace.github.io/the_book/
 on:
   # Runs on pushes targeting the default branch
   push:
