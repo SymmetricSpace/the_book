@@ -33,4 +33,4 @@ jobs:
         PAGE_URL: www.arbustum-intelligens.xyz
       run: coscmd config -a $SECRET_ID -s $SECRET_KEY -b $BUCKET -r $REGION
     - name: Upload
-      run: coscmd upload -rs --delete -f ./publish /
+      run: coscmd upload -r --delete -f ./publish /
