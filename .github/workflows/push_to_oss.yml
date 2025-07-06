@@ -8,21 +8,18 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v1
     - name: Install Kodama & Typst
-        run: |
-          cargo install --git https://github.com/kokic/kodama.git
-          sudo snap install typst
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          submodules: recursive
-      - name: Setup Pages
-        id: pages
-        uses: actions/configure-pages@v5
-      - name: Build with Kodama
-        run: |
-          kodama c -b $PAGE_URL
+      run: |
+        cargo install --git https://github.com/kokic/kodama.git
+        sudo snap install typst
+    - name: Checkout
+      uses: actions/checkout@v4
+      with:
+        submodules: recursive
+        
+    - name: Build with Kodama
+      run: |
+        kodama c -b $PAGE_URL
 
     - name: Install coscmd
       run: sudo pip install coscmd
