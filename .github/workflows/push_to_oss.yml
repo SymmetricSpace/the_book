@@ -10,7 +10,7 @@ jobs:
     steps:
     - name: Install Kodama & Typst
       run: |
-        cargo install --git https://github.com/kokic/kodama.git
+        cargo install --git https://github.com/1478599553/kodama.git
         sudo snap install typst
     - name: Checkout
       uses: actions/checkout@v4
@@ -30,7 +30,7 @@ jobs:
         SECRET_KEY: ${{ secrets.SECRET_KEY }}
         BUCKET: test-1301337442
         REGION: ap-tokyo
-        PAGE_URL: www.arbustum-intelligens.xyz
+        
       run: coscmd config -a $SECRET_ID -s $SECRET_KEY -b $BUCKET -r $REGION
     - name: Upload
       run: |
