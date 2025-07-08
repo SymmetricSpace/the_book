@@ -19,7 +19,7 @@ jobs:
         
     - name: Build with Kodama
       run: |
-        kodama c -b $PAGE_URL
+        kodama c -b $PAGE_URL -s
       env:
         PAGE_URL: / #www.arbustum-intelligens.xyz
     - name: Install coscmd

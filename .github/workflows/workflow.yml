@@ -45,7 +45,7 @@ jobs:
         uses: actions/configure-pages@v5
       - name: Build with Kodama
         run: |
-          kodama c -b $PAGE_URL
+          kodama c -b $PAGE_URL -s
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
